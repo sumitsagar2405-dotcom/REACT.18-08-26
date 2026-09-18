@@ -1,11 +1,12 @@
 import React from 'react'
 
-const Card = () => {
+const Card = (props) => {
   return (
     <div className='parent'>
       <div className="card">
-        <img src="https://images.pexels.com/photos/2519811/pexels-photo-2519811.jpeg" alt="" />
-        <h1>SUMIT YADAV</h1>
+        <img src={props.img} alt="" />
+        <h1>{props.name}</h1>
+        <h1>age is {props.age}</h1>
         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
         <button>View profile</button>
       </div>
